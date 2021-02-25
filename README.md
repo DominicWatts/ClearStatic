@@ -1,5 +1,11 @@
 # Clear Static #
 
+![phpcs](https://github.com/DominicWatts/ClearStatic/workflows/phpcs/badge.svg)
+
+![PHPCompatibility](https://github.com/DominicWatts/ClearStatic/workflows/PHPCompatibility/badge.svg)
+
+![PHPStan](https://github.com/DominicWatts/ClearStatic/workflows/PHPStan/badge.svg)
+
 Console script to clear static content.  Will clear both frontend and backend static content in a single command. Ideal for pushing through knockout html changes.
 
 # Install instructions #
