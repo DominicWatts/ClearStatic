@@ -6,7 +6,7 @@
 
 ![PHPStan](https://github.com/DominicWatts/ClearStatic/workflows/PHPStan/badge.svg)
 
-[![php-cs-fixer](https://github.com/DominicWatts/ClearStatic/workflows/php-cs-fixer/badge.svg)
+![php-cs-fixer](https://github.com/DominicWatts/ClearStatic/workflows/php-cs-fixer/badge.svg)
 
 Console script to clear static content.  Will clear both frontend and backend static content in a single command. Ideal for pushing through knockout html changes.
 
