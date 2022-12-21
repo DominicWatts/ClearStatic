@@ -1,6 +1,6 @@
 <?php
 
-namespace Xigen\ClearStatic\Console\Command;
+namespace PixieMedia\ClearStatic\Console\Command;
 
 use Magento\Framework\App\Area;
 use Magento\Framework\App\ObjectManager;
@@ -68,7 +68,7 @@ class Clear extends Command
      */
     protected function configure()
     {
-        $this->setName("xigen:clearstatic:clear");
+        $this->setName("piximedia:clearstatic:clear");
         $this->setDescription("Clear static content");
         $this->addOption(
             self::INPUT_KEY_CLEAR_STATIC_CONTENT,
