@@ -3,7 +3,7 @@
 	<type name="Magento\Framework\Console\CommandList">
 		<arguments>
 			<argument name="commands" xsi:type="array">
-				<item name="ClearStatic_Clear" xsi:type="object">Xigen\ClearStatic\Console\Command\Clear</item>
+				<item name="ClearStatic_Clear" xsi:type="object">PixieMedia\ClearStatic\Console\Command\Clear</item>
 			</argument>
 		</arguments>
 	</type>
