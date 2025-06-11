@@ -68,7 +68,7 @@ class Clear extends Command
      */
     protected function configure()
     {
-        $this->setName("piximedia:clearstatic:clear");
+        $this->setName("pixiemedia:clearstatic:clear");
         $this->setDescription("Clear static content");
         $this->addOption(
             self::INPUT_KEY_CLEAR_STATIC_CONTENT,
