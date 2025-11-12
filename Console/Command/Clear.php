@@ -49,18 +49,11 @@ class Clear extends Command
     ) {
         $this->state->setAreaCode(Area::AREA_GLOBAL);
         $this->_objectManager = ObjectManager::getInstance();
-
-        if ($input->getOption(self::INPUT_KEY_CLEAR_STATIC_CONTENT)) {
-            $ClearupFiles = $this->_objectManager->get(CleanupFiles::class);
-            $ClearupFiles->clearMaterializedViewFiles();
-            $output->writeln('<info>Generated static view files cleared successfully.</info>');
-        } else {
-            throw new LocalizedException(__(
-                "To clear static view files run %1 with the -- %2 option to clear them.'",
-                $this->getName(),
-                self::INPUT_KEY_CLEAR_STATIC_CONTENT
-            ));
-        }
+        
+        $ClearupFiles = $this->_objectManager->get(CleanupFiles::class);
+        $ClearupFiles->clearMaterializedViewFiles();
+        $output->writeln('<info>Generated static view files cleared successfully.</info>');
+        
     }
 
     /**
@@ -70,12 +63,6 @@ class Clear extends Command
     {
         $this->setName("pixiemedia:clearstatic:clear");
         $this->setDescription("Clear static content");
-        $this->addOption(
-            self::INPUT_KEY_CLEAR_STATIC_CONTENT,
-            'c',
-            InputOption::VALUE_NONE,
-            'Clear generated static view files.'
-        );
         parent::configure();
     }
 }
