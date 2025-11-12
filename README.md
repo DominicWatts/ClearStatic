@@ -20,12 +20,12 @@ Console script to clear static content.  Will clear both frontend and backend st
 
 # Usage instructions #
 
-`piximedia:clearstatic:clear [-c|--clear-static-content]`
+`piximedia:clearstatic:clear`
 
-`php bin/magento piximedia:clearstatic:clear -c`
+`php bin/magento piximedia:clearstatic:clear`
 
 or
 
-`php bin/magento piximedia:clearstatic:clear --clear-static-content`
+`php bin/magento piximedia:clearstatic:clear`
 
 Then generate static content using standard procedure.
