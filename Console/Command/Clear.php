@@ -39,7 +39,9 @@ class Clear extends Command
     /**
      * @param InputInterface $input
      * @param OutputInterface $output
+     *
      * @return int|void|null
+     *
      * @throws LocalizedException
      */
     protected function execute(
@@ -48,11 +50,11 @@ class Clear extends Command
     ) {
         $this->state->setAreaCode(Area::AREA_GLOBAL);
         $this->_objectManager = ObjectManager::getInstance();
-        
+
         $ClearupFiles = $this->_objectManager->get(CleanupFiles::class);
         $ClearupFiles->clearMaterializedViewFiles();
         $output->writeln('<info>Generated static view files cleared successfully.</info>');
-        
+
     }
 
     /**
